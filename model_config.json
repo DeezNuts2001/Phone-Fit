@@ -1,0 +1,123 @@
+{
+  "Stable Diffusion v1.5 Inpainting": {
+    "family": "sd15",
+    "isPony": false,
+    "steps": {"min": 10, "max": 50, "default": 20},
+    "cfg": {"min": 1, "max": 20, "default": 7},
+    "shift": {"min": 0, "max": 2, "default": 1.0},
+    "resolutions": ["512x512", "768x512", "512x768", "768x768"],
+    "clipSkip": {"min": 1, "max": 12, "default": 1},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "DDIM", "PLMS"],
+    "negativeOriginalImageSize": "512x512",
+    "iphoneNotes": "Lightest SD1.5. Safe batch 2 at 512."
+  },
+  "realisticVisionV60B1_v60B1VAE": {
+    "family": "sd15",
+    "isPony": false,
+    "steps": {"min": 15, "max": 40, "default": 25},
+    "cfg": {"min": 2, "max": 12, "default": 5.5},
+    "shift": {"min": 0, "max": 2, "default": 1.0},
+    "resolutions": ["512x512", "768x512", "512x768"],
+    "clipSkip": {"min": 1, "max": 12, "default": 1},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "DDIM"],
+    "negativeOriginalImageSize": "512x512",
+    "iphoneNotes": "Photorealistic SD1.5. Watch VRAM at 768."
+  },
+  "realisian_v60": {
+    "family": "sd15",
+    "isPony": false,
+    "steps": {"min": 15, "max": 40, "default": 25},
+    "cfg": {"min": 2, "max": 12, "default": 5.5},
+    "shift": {"min": 0, "max": 2, "default": 1.0},
+    "resolutions": ["512x512", "768x512", "512x768"],
+    "clipSkip": {"min": 1, "max": 12, "default": 1},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "DDIM"],
+    "negativeOriginalImageSize": "512x512",
+    "iphoneNotes": "SD1.5 realistic. Similar footprint to realisticVision."
+  },
+  "cyberrealistic_final_pruned_fp16": {
+    "family": "sd15",
+    "isPony": false,
+    "steps": {"min": 15, "max": 40, "default": 25},
+    "cfg": {"min": 2, "max": 12, "default": 5.5},
+    "shift": {"min": 0, "max": 2, "default": 1.0},
+    "resolutions": ["512x512", "768x512", "512x768"],
+    "clipSkip": {"min": 1, "max": 12, "default": 1},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "DDIM"],
+    "negativeOriginalImageSize": "512x512",
+    "iphoneNotes": "SD1.5 cyberrealistic. fp16, moderate size."
+  },
+  "RealVisXL_V4.0": {
+    "family": "sdxl",
+    "isPony": false,
+    "steps": {"min": 20, "max": 40, "default": 30},
+    "cfg": {"min": 2, "max": 10, "default": 5},
+    "shift": {"min": 0, "max": 4, "default": 1.0},
+    "resolutions": ["832x1216", "1024x1024", "768x1344", "1216x832"],
+    "clipSkip": {"min": 1, "max": 12, "default": 2},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "UniPC"],
+    "negativeOriginalImageSize": "1024x1024",
+    "iphoneNotes": "SDXL base. 1024 is heavy on A17 Pro; prefer 832."
+  },
+  "Juggernaut_RunDiffusionPhoto": {
+    "family": "sdxl",
+    "isPony": false,
+    "steps": {"min": 20, "max": 40, "default": 30},
+    "cfg": {"min": 2, "max": 10, "default": 5},
+    "shift": {"min": 0, "max": 4, "default": 1.0},
+    "resolutions": ["832x1216", "1024x1024", "768x1344", "1216x832"],
+    "clipSkip": {"min": 1, "max": 12, "default": 2},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "UniPC"],
+    "negativeOriginalImageSize": "1024x1024",
+    "iphoneNotes": "SDXL photo model. Same memory profile as RealVisXL."
+  },
+  "cyberrealisticPony_v180Coresh": {
+    "family": "sdxl",
+    "isPony": true,
+    "steps": {"min": 20, "max": 40, "default": 28},
+    "cfg": {"min": 2, "max": 10, "default": 6},
+    "shift": {"min": 0, "max": 4, "default": 1.0},
+    "resolutions": ["832x1216", "1024x1024", "768x1344"],
+    "clipSkip": {"min": 1, "max": 12, "default": 2},
+    "samplers": ["DPM++ 2M Karras", "Euler A", "UniPC"],
+    "negativeOriginalImageSize": "512x512",
+    "promptSyntax": "Use score_9, score_8_up, score_7_up tags. source_anime / source_realistic.",
+    "iphoneNotes": "Pony SDXL. isPony=true changes prompt handling."
+  },
+  "PixelWave FLUX.1 Schnell 04": {
+    "family": "flux",
+    "isPony": false,
+    "steps": {"min": 4, "max": 8, "default": 4},
+    "cfg": {"min": 1, "max": 1, "default": 1},
+    "shift": {"min": 0, "max": 4, "default": 1.0},
+    "resolutions": ["512x512", "768x512", "512x768", "832x1216"],
+    "clipSkip": null,
+    "samplers": ["Euler"],
+    "negativeOriginalImageSize": "1024x1024",
+    "iphoneNotes": "Schnell = distilled, 4 steps. Fastest FLUX. 5-bit quantized."
+  },
+  "FLUX.1 Fill [dev] (5-bit)": {
+    "family": "flux",
+    "isPony": false,
+    "steps": {"min": 20, "max": 50, "default": 30},
+    "cfg": {"min": 1, "max": 1, "default": 1},
+    "shift": {"min": 0, "max": 4, "default": 1.15},
+    "resolutions": ["512x512", "768x512", "512x768"],
+    "clipSkip": null,
+    "samplers": ["Euler"],
+    "negativeOriginalImageSize": "1024x1024",
+    "iphoneNotes": "Inpainting FLUX. Heaviest model. 5-bit helps but still tight on 8GB."
+  },
+  "FLUX.1 [dev] (5-bit)": {
+    "family": "flux",
+    "isPony": false,
+    "steps": {"min": 20, "max": 50, "default": 28},
+    "cfg": {"min": 1, "max": 1, "default": 1},
+    "shift": {"min": 0, "max": 4, "default": 1.15},
+    "resolutions": ["512x512", "768x512", "512x768", "832x1216"],
+    "clipSkip": null,
+    "samplers": ["Euler"],
+    "negativeOriginalImageSize": "1024x1024",
+    "iphoneNotes": "Full FLUX dev, 5-bit. Slowest but best quality. Use Tiled Decoding."
+  }
+}
